@@ -1,5 +1,3 @@
-// Utilities
-
 $utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-merge(
@@ -639,6 +637,21 @@ $utilities: map-merge(
       values: (
         visible: visible,
         invisible: hidden,
+      )
+    ),
+
+    "background-attachment":(
+      property: background-attachment,
+      class:bg-attachment,
+      values:(
+        fixed:fixed,
+      )
+    ),
+    
+    "object-fit":(
+      property: object-fit,
+      values:(
+        cover:cover,
       )
     )
     // scss-docs-end utils-visibility
